@@ -78,10 +78,14 @@ Instructions are annotated using hashes #
     - sudo mount /dev/loop0p1 /mnt/part1
     - sudo mount /dev/loop0p2 /mnt/part2
 
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+####                                                                                                              ####
 #### The following few instructions are for a custom first-boot partition resizer tailored for 2 partition setups ####
 ####     The resize.sh and its corresponding resize.service can be used without the resize_notification files     ####
 ####    The resize_notification files are added to provide a simple notification on OSMC custom image installs    ####
 ####      Check the repo for another version of resize_notification.py tailored for other custom OS installs      ####
+####                                                                                                              ####
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ## Make resize.sh and resize_notification.py executable
   - sudo chmod +x ~/Imaging_Instructions/resize.sh
