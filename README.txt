@@ -88,8 +88,8 @@ Instructions are annotated using hashes #
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 ##                                                                                                              ##
 ## The following few instructions are for a custom first-boot partition resizer tailored for 2 partition setups ##
-##     The resize.sh and its corresponding resize.service can be used without the resize_notification files     ##
-##    The resize_notification files are added to provide a simple notification on OSMC custom image installs    ##
+##       Resize.sh and its corresponding resize.service can be used without the resize_notification files       ##
+##      Resize_notification files are added to provide a simple notification on OSMC custom image installs      ##
 ##      Check the repo for another version of resize_notification.py tailored for other custom OS installs      ##
 ##                                                                                                              ##
 \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
