@@ -17,6 +17,12 @@ Instructions are annotated using hashes #
 !!!!!!     I AM NOT LIABLE FOR CORRUPTION, DAMAGES, ETC     !!!!!!
 !!!!!!               PROCEED AT YOUR OWN RISK               !!!!!!
 !!!!!!                                                      !!!!!!
+!!!!!!        ALL INSTRUCTIONS PROVIDED ARE EXAMPLES        !!!!!!
+!!!!!!                                                      !!!!!!
+!!!!!!        NOT ALL OS IMAGES ARE HANDLED THE SAME        !!!!!!
+!!!!!!     THIS PROCESS WORKS FOR ME AND IS ONE OF MANY     !!!!!!
+!!!!!!             WAYS IN WHICH IT CAN BE DONE             !!!!!!
+!!!!!!                                                      !!!!!!
 -#-#-#-#-#--#-#-#-#-#--#-#-#-#-#--#-#-#-#-#--#-#-#-#-#--#-#-#-#-#-
 
 # Use GParted to shrink partitions (Don't shrink /boot/ or /part1/)
@@ -36,13 +42,13 @@ Instructions are annotated using hashes #
 # Use fdisk to write partitions to empty disc image
   - fdisk /path/to/empty/disc.img
     - n <new_partition>
-    - p <primary_partition> -/- l <logical_partition>
+    - p <primary_partition> /// l <logical_partition>
     - 1 <partition_number>
     - 8192 <first_sector> (4MiB empty)
     - +647168 <last_sector> 
 
     - n <new_partition>
-    - p <primary_partition> -/- l <logical_partition>
+    - p <primary_partition> /// l <logical_partition>
     - 2 <partition_number>
     - 663552 <first_sector> (1st partition 4MiB empty + 1st partition Last sector + 4MiB empty)
     - +7340040 <last_sector>
@@ -55,7 +61,8 @@ Instructions are annotated using hashes #
 # Use fdisk to properly format the partitions
   - t <change_partition_id>
   - 1 <partition_number>
-  - c <partition_format> (W95 FAT32 LBA) -/- b (W95 FAT32) -/- 7 (HPFS/NTFS/exFAT) -/- 83 (Linux FileSystems) -/- 82 (Linux Swap) -/- l <full_list> (Lists Available Formats)
+  - c <partition_format> (W95 FAT32 LBA) /// b (W95 FAT32) /// 7 (HPFS/NTFS/exFAT) ///
+        83 (Linux FileSystems) /// 82 (Linux Swap) /// l <full_list> (Lists Available Formats)
   - w <write_changes>
 
 # Format FileSystems on partitions if necessary (mkfs.<filesystem-type> <options> /dev/<device>)
