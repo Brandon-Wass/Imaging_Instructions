@@ -1,0 +1,12 @@
+[Unit]
+Description=Expand Root Filesystem on First Boot
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/osmc/resize.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

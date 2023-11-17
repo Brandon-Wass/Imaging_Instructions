@@ -1,0 +1,10 @@
+[Unit]
+Description=Expand Root Filesystem Notification
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/osmc/resize_overlay.py
+
+[Install]
+WantedBy=multi-user.target
