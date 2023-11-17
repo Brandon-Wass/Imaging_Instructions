@@ -146,5 +146,7 @@ Instructions are annotated using hashes #
   - sudo losetup -d /dev/loop0
 
 # Write the final .img file
+  - Use any capable imaging tool to write the final .img file to your desired device or location
+    - There are many out there. The two tools I use most for this are Rufus (Windows) and GNOME Disks (Linux)
 
 -#-#-#-#-#--#-#-#-#-#--#-#-#-#-#--#-#-#-#-#--#-#-#-#-#--#-#-#-#-#-
